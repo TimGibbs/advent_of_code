@@ -1,8 +1,4 @@
-﻿// @algorithm ArrayAggregation
-// @category Math / Geometry
-// @data-structure Array
-// @complexity Time: O(n), Space: O(1)
-// @variant Part1: SurfaceAreaPlusSlack, Part2: RibbonAndVolume
+﻿
 
 await Part1();
 await Part2();
