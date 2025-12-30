@@ -74,6 +74,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day19-Medicine for Rudolph"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day23-Opening the Turing Lock", "2015\day23-Opening the Turing Lock\day23-Opening the Turing Lock.csproj", "{7ECA634E-115A-4FBC-85A7-3C71A54F684F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day24-It Hangs in the Balance", "2015\day24-It Hangs in the Balance\day24-It Hangs in the Balance.csproj", "{440D89B5-098C-46A2-845C-4646A82CBEFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -220,6 +222,10 @@ Global
 		{7ECA634E-115A-4FBC-85A7-3C71A54F684F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ECA634E-115A-4FBC-85A7-3C71A54F684F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ECA634E-115A-4FBC-85A7-3C71A54F684F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440D89B5-098C-46A2-845C-4646A82CBEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440D89B5-098C-46A2-845C-4646A82CBEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440D89B5-098C-46A2-845C-4646A82CBEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440D89B5-098C-46A2-845C-4646A82CBEFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF89AD60-B316-4A3F-BEA5-A77DC6717817} = {C46D5B93-69BC-45CA-95F3-7014122DEEA1}
@@ -257,5 +263,6 @@ Global
 		{FE32F14C-51B7-4B62-A503-1CE547D55088} = {8DCDC2E1-DCAD-43EC-BD17-0D2F8916B67B}
 		{7E25695C-0E56-401C-8FC3-1624CAC712D8} = {8DCDC2E1-DCAD-43EC-BD17-0D2F8916B67B}
 		{7ECA634E-115A-4FBC-85A7-3C71A54F684F} = {8DCDC2E1-DCAD-43EC-BD17-0D2F8916B67B}
+		{440D89B5-098C-46A2-845C-4646A82CBEFA} = {8DCDC2E1-DCAD-43EC-BD17-0D2F8916B67B}
 	EndGlobalSection
 EndGlobal
