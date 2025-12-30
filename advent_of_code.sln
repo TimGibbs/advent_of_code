@@ -64,7 +64,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day17-No Such Thing as Too 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day18-Like a GIF For Your Yard", "2015\day18-Like a GIF For Your Yard\day18-Like a GIF For Your Yard.csproj", "{A6AB899F-7EF8-4782-98E7-076F61D36BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day19-Medicine for Rudolph", "2015\Day19-Medicine for Rudolph\Day19-Medicine for Rudolph.csproj", "{6CAC96CD-C890-437F-BC3B-8F3DF32B65CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day19-Medicine for Rudolph", "2015\day19-Medicine for Rudolph\day19-Medicine for Rudolph.csproj", "{6CAC96CD-C890-437F-BC3B-8F3DF32B65CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day20-Infinite Elves and Infinite Houses", "2015\day20-Infinite Elves and Infinite Houses\day20-Infinite Elves and Infinite Houses.csproj", "{4981F71D-C845-4D20-AB65-B433764F9548}"
 EndProject
