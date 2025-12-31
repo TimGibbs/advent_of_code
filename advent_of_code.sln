@@ -27,6 +27,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2025", "2025", "{C46D5B93-69BC-45CA-95F3-7014122DEEA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2015", "2015", "{8DCDC2E1-DCAD-43EC-BD17-0D2F8916B67B}"
+	ProjectSection(SolutionItems) = preProject
+		2015\Calendar.html = 2015\Calendar.html
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day01-Not Quite Lisp", "2015\day01-Not Quite Lisp\day01-Not Quite Lisp.csproj", "{43A0E69F-6D5C-4433-A26D-EAE1284F8782}"
 EndProject
