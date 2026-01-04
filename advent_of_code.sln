@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day07-Internet Protocol Ver
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day08-Two-Factor Authentication", "2016\day08-Two-Factor Authentication\day08-Two-Factor Authentication.csproj", "{47AE610A-41C1-4971-971C-8BC48E43EEDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day09-Explosives in Cyberspace", "2016\day09-Explosives in Cyberspace\day09-Explosives in Cyberspace.csproj", "{32516BC9-240B-44C2-8C8F-F1C63AC7C3EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -285,6 +287,10 @@ Global
 		{47AE610A-41C1-4971-971C-8BC48E43EEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47AE610A-41C1-4971-971C-8BC48E43EEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47AE610A-41C1-4971-971C-8BC48E43EEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32516BC9-240B-44C2-8C8F-F1C63AC7C3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32516BC9-240B-44C2-8C8F-F1C63AC7C3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32516BC9-240B-44C2-8C8F-F1C63AC7C3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32516BC9-240B-44C2-8C8F-F1C63AC7C3EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF89AD60-B316-4A3F-BEA5-A77DC6717817} = {C46D5B93-69BC-45CA-95F3-7014122DEEA1}
@@ -332,5 +338,6 @@ Global
 		{867E3240-AFB7-467A-AF53-11CCCA765BD8} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
 		{72209FFC-F6EB-40B4-B4B3-CE25CD53CF55} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
 		{47AE610A-41C1-4971-971C-8BC48E43EEDC} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
+		{32516BC9-240B-44C2-8C8F-F1C63AC7C3EA} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
 	EndGlobalSection
 EndGlobal
