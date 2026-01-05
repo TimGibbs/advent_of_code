@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day09-Explosives in Cybersp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day10-Balance Bots", "2016\day10-Balance Bots\day10-Balance Bots.csproj", "{E746D5B1-F161-49BC-9359-151E5B64101B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day11-Radioisotope Thermoelectric Generators", "2016\day11-Radioisotope Thermoelectric Generators\day11-Radioisotope Thermoelectric Generators.csproj", "{53733B05-3682-4F2C-804F-3B540CE917A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -297,6 +299,10 @@ Global
 		{E746D5B1-F161-49BC-9359-151E5B64101B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E746D5B1-F161-49BC-9359-151E5B64101B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E746D5B1-F161-49BC-9359-151E5B64101B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53733B05-3682-4F2C-804F-3B540CE917A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53733B05-3682-4F2C-804F-3B540CE917A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53733B05-3682-4F2C-804F-3B540CE917A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53733B05-3682-4F2C-804F-3B540CE917A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF89AD60-B316-4A3F-BEA5-A77DC6717817} = {C46D5B93-69BC-45CA-95F3-7014122DEEA1}
@@ -346,5 +352,6 @@ Global
 		{47AE610A-41C1-4971-971C-8BC48E43EEDC} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
 		{32516BC9-240B-44C2-8C8F-F1C63AC7C3EA} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
 		{E746D5B1-F161-49BC-9359-151E5B64101B} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
+		{53733B05-3682-4F2C-804F-3B540CE917A6} = {CE152D5C-389C-496A-B17F-A92D4EC8BABF}
 	EndGlobalSection
 EndGlobal
