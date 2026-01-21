@@ -1,4 +1,29 @@
-﻿await Part1();
+﻿// @algorithm Connected Components (Graph Traversal)
+// @category Graph Theory / Search
+// @input Undirected graph adjacency list ("a <-> b, c, d")
+// @problem
+//   Determine connectivity groups in an undirected graph
+// @parts
+//   Part1: Size of the group containing node 0
+//   Part2: Total number of distinct groups
+// @model
+//   - Nodes represented as integers
+//   - Edges are bidirectional
+// @technique
+//   - Depth-first search using an explicit stack
+//   - Global visited set to avoid reprocessing nodes
+// @data-structures
+//   - Dictionary<int, int[]> for adjacency list
+//   - HashSet<int> for visited nodes and group membership
+//   - Stack<int> for DFS traversal
+// @complexity
+//   Time: O(V + E)
+//   Space: O(V)
+// @notes
+//   - Each DFS discovers exactly one connected component
+//   - groups[0] corresponds to the component discovered starting from node 0
+
+await Part1();
 return;
 
 async Task Part1()
@@ -21,7 +46,7 @@ async Task Part1()
         var toVisit = new Stack<int>();
         toVisit.Push(key);
         while (toVisit.Count > 0)
-        {
+        { 
             var current = toVisit.Pop();
             if (!visited.Add(current))
                 continue;
