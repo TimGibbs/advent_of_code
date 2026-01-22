@@ -34,40 +34,12 @@ async Task Part1()
 {
     var line = await File.ReadAllTextAsync("input.txt");
     var lengths = line.Split(',').Select(int.Parse).ToArray();
+
     var loop = Enumerable.Range(0, 256).ToArray();
-    var skipSize = 0;
     var position = 0;
-    
-    Span<int> buffer = stackalloc int[loop.Length];
+    var skipSize = 0;
 
-    foreach (var length in lengths)
-    {
-        if (length > loop.Length)
-            continue;
-
-        if (position + length <= loop.Length)
-        {
-            loop.AsSpan(position, length).Reverse();
-        }
-        else
-        {
-            var firstPart = loop.Length - position;
-            var secondPart = length - firstPart;
-
-            var temp = buffer[..length];
-
-            loop.AsSpan(position, firstPart).CopyTo(temp);
-            loop.AsSpan(0, secondPart).CopyTo(temp[firstPart..]);
-
-            temp.Reverse();
-
-            temp[..firstPart].CopyTo(loop.AsSpan(position, firstPart));
-            temp[firstPart..].CopyTo(loop.AsSpan(0, secondPart));
-        }
-
-        position = (position + length + skipSize) % loop.Length;
-        skipSize++;
-    }
+    Logic.RunKnotRound(loop, lengths, ref position, ref skipSize);
 
     Console.WriteLine(loop[0] * loop[1]);
 }
@@ -75,14 +47,19 @@ async Task Part1()
 async Task Part2()
 {
     var line = await File.ReadAllTextAsync("input.txt");
-    var lengths = line.Trim().Select(x => (int)x).Concat([17, 31, 73, 47, 23]).ToArray();
-    var loop = Enumerable.Range(0, 256).ToArray();
-    var skipSize = 0;
-    var position = 0;
+    Console.WriteLine(Logic.KnotHash(line.Trim()));
+}
 
-    Span<int> buffer = stackalloc int[loop.Length];
-    for (var i = 0; i < 64; i++)
+public static class Logic
+{
+    public static void RunKnotRound(
+        int[] loop,
+        ReadOnlySpan<int> lengths,
+        ref int position,
+        ref int skipSize)
     {
+        Span<int> buffer = stackalloc int[loop.Length];
+
         foreach (var length in lengths)
         {
             if (length > loop.Length)
@@ -113,11 +90,33 @@ async Task Part2()
         }
     }
 
-    var grouped = loop
-        .Index()
-        .GroupBy(x => x.Index / 16, v => v.Item)
-        .Select(x => x.Aggregate((a, b) => a ^ b))
-        .Select(x => x.ToString("X2").ToLower())
-        .ToArray();
-    Console.WriteLine(string.Join("",grouped));
+    public static string ComputeDenseHash(int[] sparseHash)
+    {
+        return string.Concat(
+            sparseHash
+                .Chunk(16)
+                .Select(chunk => chunk.Aggregate((a, b) => a ^ b))
+                .Select(x => x.ToString("x2"))
+        );
+    }
+
+    public static string KnotHash(string input)
+    {
+        var lengths = input
+            .Select(c => (int)c)
+            .Concat([17, 31, 73, 47, 23])
+            .ToArray();
+
+        var loop = Enumerable.Range(0, 256).ToArray();
+        var position = 0;
+        var skipSize = 0;
+
+        for (var round = 0; round < 64; round++)
+        {
+            RunKnotRound(loop, lengths, ref position, ref skipSize);
+        }
+
+        return ComputeDenseHash(loop);
+    }
 }
+
