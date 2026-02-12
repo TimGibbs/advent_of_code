@@ -1,4 +1,35 @@
-﻿await Part1();
+﻿// @algorithm Permutation Dance Simulation
+// @category Permutation / Cycle Detection
+// @input Comma-separated dance instructions
+// @programs Initial state: "abcdefghijklmnop"
+// @moves
+//   sX  → Spin: rotate right by X
+//   xA/B → Exchange: swap positions A and B
+//   pA/B → Partner: swap programs by name
+// @parts
+//   Part1: Apply one full dance sequence
+//   Part2: Apply dance 1,000,000,000 times (cycle optimized)
+// @model
+//   - State represented as char[16]
+//   - Dance operations are permutations of positions/labels
+// @technique
+//   - Direct simulation for one round
+//   - Cycle detection using Dictionary<string, int>
+//   - Fast-forward using cycle length and modular arithmetic
+// @data-structures
+//   - char[] for program order
+//   - Dictionary<string, int> for seen states
+//   - Temporary buffer for spin operation
+// @complexity
+//   Part1: O(m)
+//   Part2: O(cycle_length * m)
+//   Space: O(cycle_length)
+//   (m = number of instructions)
+// @notes
+//   - Entire dance sequence forms a permutation cycle
+//   - Once a repeated state is found, remaining iterations are computed via modulo
+
+await Part1();
 await Part2();
 return;
 
